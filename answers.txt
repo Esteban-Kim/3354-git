@@ -1,0 +1,14 @@
+a) There are a total of 7 commits since inception by original author until step 8. Can use either command 'git log' to count or 'git rev-list --count HEAD'.
+
+b) The .gitignore file was added to the project on January 24 2017 by juan.
+
+c) Git log provides a list of all the previous commits, essentially a history of the project. Git status gives the current state of the directory you are working in.
+For example, git status will tell you if there is anything that needs to be commited.
+
+d) Untracked files are files that do not exist in the Git repository but exist in the local repository. For example, the status.txt file created is initally "untracked" until it is added.
+Unstaged are changes that occured to an existing file in the Git repository that has not been recorded yet. For example, the changes to the README.md file were "unstaged" after the name and NetID were added.
+
+e) Git checkout allows you to change between branches but it can also be used to create a new branch if "-b" command is included with "git checkout".
+Git reset is used to undo changes on the local repository. The command allows you to move to a different version.
+
+f) Git will not allow you to pull when there are uncommited changes in your local repository. All changes must first be either committed or stashed, depending on what you want to do, prior to pulling from the git repository.

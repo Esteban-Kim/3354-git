@@ -7,11 +7,17 @@ public class Main {
             int result = addArguments(args);
             System.out.println(result);
         } catch (Exception e) {
-            System.err.println("Please provide two integers to add");
+            System.err.println("Please provide multiple integers to add");
         }
     }
 
     private static int addArguments(String[] args) {
-        return Integer.valueOf(args[0]) + Integer.valueOf(args[1]);
+        int sumOfArguments = 0;
+
+        for (String str : args) {
+            sumOfArguments += Integer.valueOf(str);
+        }
+
+        return sumOfArguments;
     }
 }

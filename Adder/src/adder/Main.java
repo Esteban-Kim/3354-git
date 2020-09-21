@@ -6,8 +6,10 @@ public class Main {
         try {
             int result = addArguments(args);
             System.out.println(result);
+        } catch (NumberFormatException  e) {
+            System.err.println("Invalid character(s) provided in argument. Please provide valid numerical arguments.");
         } catch (Exception e) {
-            System.err.println("Please provide multiple integers to add");
+            System.err.println("Insufficent arguments provided. Please provide numerical arguments.");
         }
     }
 
